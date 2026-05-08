@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Jam Web-Dev GDGoC UNAIR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="./Logo-Branding-UNAIR-biru.png" alt="Logo UNAIR" class="logo">
+        <button id="theme-toggle" class="btn-outline">🌙 Dark Mode</button>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Front-End Learning Series <span class="highlight">GDGoC UNAIR</span></h1>
+            <p class="subtitle">Membangun fondasi web development modern yang interaktif dan aesthetic.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro-card fade-in">
+            <p>Selamat datang di <strong>Study Jam Web-Dev GDGoC UNAIR!</strong> Di sini, kita akan belajar bersama tentang pengembangan web. Kami akan membahas berbagai topik mulai dari HTML, CSS, JavaScript, hingga framework dan tools yang digunakan dalam pengembangan web modern.</p>
+            <p>Jangan ragu untuk bertanya dan berdiskusi selama sesi ini. Kami akan berusaha memberikan penjelasan yang jelas dan mudah dipahami. Semoga kita semua bisa belajar banyak dan meningkatkan keterampilan kita dalam pengembangan web!</p>
+            <a href="https://unair.ac.id/" target="_blank" rel="noopener noreferrer" class="btn-primary">Kunjungi Situs Resmi UNAIR</a>
+        </section>
+
+        <section class="agenda-section fade-in">
+            <h2>📅 Agenda Study Jam</h2>
+            <ul class="agenda-list">
+                <li><span class="time">09:00 - 10:00</span> <span class="event">Pengenalan HTML dan CSS</span></li>
+                <li><span class="time">10:00 - 11:00</span> <span class="event">Dasar-dasar JavaScript</span></li>
+                <li class="break-item"><span class="time">11:00 - 12:00</span> <span class="event">Break & Networking ☕</span></li>
+                <li><span class="time">12:00 - 13:00</span> <span class="event">Pengenalan Framework (React/Vue)</span></li>
+                <li><span class="time">13:00 - 14:00</span> <span class="event">Praktik Membuat Website Sederhana</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GDGoC UNAIR - Crafted with ❤️ for Web Dev Enthusiasts</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
