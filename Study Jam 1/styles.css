@@ -1,6 +1,6 @@
 :root {
-    /* Light Theme Variables */
-    --primary-color: #0d6efd; /* UNAIR Blue */
+    
+    --primary-color: #0d6efd;
     --primary-hover: #0b5ed7;
     --bg-color: #f8f9fa;
     --text-main: #2b2b2b;
@@ -12,7 +12,7 @@
 }
 
 [data-theme="dark"] {
-    /* Dark Theme Variables */
+    
     --primary-color: #3b82f6;
     --primary-hover: #60a5fa;
     --bg-color: #121212;
@@ -20,7 +20,7 @@
     --text-muted: #9ca3af;
     --card-bg: #1f2937;
     --border-color: #374151;
-    --break-bg: rgba(59, 130, 246, 0.15); /* Diterangkan sedikit untuk Dark Mode */
+    --break-bg: rgba(59, 130, 246, 0.15);
 }
 
 * {
@@ -56,7 +56,7 @@ body {
     width: auto;
 }
 
-/* Buttons */
+
 .btn-outline {
     background: transparent;
     border: 2px solid var(--primary-color);
@@ -92,7 +92,7 @@ body {
     box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
 }
 
-/* Hero Section */
+
 .hero-section {
     text-align: center;
     padding: 5rem 1rem 3rem 1rem;
@@ -115,14 +115,14 @@ body {
     margin: 0 auto;
 }
 
-/* Main Container */
+
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
 
-/* Cards Component */
+
 .intro-card, .agenda-section {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -142,7 +142,7 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Agenda List Styling */
+
 .agenda-section h2 {
     margin-bottom: 1.5rem;
     color: var(--primary-color);
@@ -184,7 +184,7 @@ body {
     border-radius: 8px;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 2rem;
@@ -194,7 +194,7 @@ footer {
     margin-top: 2rem;
 }
 
-/* Simple Fade In Animation */
+
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -208,7 +208,7 @@ footer {
     }
 }
 
-/* Responsive Design for Mobile */
+
 @media (max-width: 600px) {
     .hero-section h1 {
         font-size: 2rem;
@@ -225,7 +225,7 @@ footer {
     }
 }
 
-/* QA Fix: Aksesibilitas bagi penderita motion sickness (Sensitif animasi) */
+
 @media (prefers-reduced-motion: reduce) {
     .fade-in {
         animation: none;

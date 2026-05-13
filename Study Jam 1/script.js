@@ -7,9 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggleBtn.textContent = '☀️ Light Mode';
     }
 
-    // 3. Tambahkan event listener saat tombol di-klik
     themeToggleBtn.addEventListener('click', () => {
-        // Ambil theme yang sedang aktif
+        
         let theme = document.documentElement.getAttribute('data-theme');
         
         if (theme === 'dark') {
