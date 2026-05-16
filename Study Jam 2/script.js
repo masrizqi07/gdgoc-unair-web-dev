@@ -4,6 +4,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskList = document.getElementById('taskList');
     const taskCount = document.getElementById('taskCount');
     const clearBtn = document.getElementById('clearBtn');
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('i');
+
+    // Theme Management
+    let isDarkMode = localStorage.getItem('theme') === 'dark';
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        themeIcon.className = 'fa-solid fa-sun';
+    }
+
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        isDarkMode = document.body.classList.contains('dark-mode');
+        localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        themeIcon.className = isDarkMode ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+    });
 
     // State management: Load from Local Storage or default to empty array
     let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
