@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Task Manager</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1><i class="fa-solid fa-check-double"></i> Task Manager</h1>
+            <p>Stay organized, focused, and productive.</p>
+        </header>
+        
+        <main class="main-content">
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="What needs to be done?" autocomplete="off">
+                <button id="addTaskBtn" aria-label="Add Task">
+                    <i class="fa-solid fa-plus"></i> Add
+                </button>
+            </div>
+
+            <div class="task-list-container">
+                <ul id="taskList" class="task-list">
+                    <!-- Tasks will be injected dynamically via JavaScript -->
+                </ul>
+            </div>
+
+            <div class="app-footer">
+                <span id="taskCount">0 tasks</span>
+                <button id="clearBtn" class="clear-btn">Clear All</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- External Script -->
+    <script src="script.js"></script>
+</body>
+</html>

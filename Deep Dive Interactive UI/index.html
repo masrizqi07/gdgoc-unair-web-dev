@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Deep Dive Into Interactive UI — JS Core & DOM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Deep Dive Into Interactive UI</h1>
+    <p class="tag">JS Core & DOM — interactive examples and playground</p>
+    <div class="controls">
+      <button id="theme-toggle">Toggle Theme</button>
+      <button id="open-modal">Open Modal</button>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-target="widgets">Widgets</button>
+    <button role="tab" data-target="todo">Todo</button>
+    <button role="tab" data-target="inspector">DOM Inspector</button>
+  </nav>
+
+  <main>
+    <section id="widgets" class="panel" aria-hidden="false">
+      <h2>Interactive Widgets</h2>
+      <div class="widget-grid">
+        <demo-tabs class="widget"></demo-tabs>
+        <drag-list class="widget"></drag-list>
+        <div class="widget">
+          <h3>Keyboard Demo</h3>
+          <p>Press <strong>G</strong> to highlight the header.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="todo" class="panel" aria-hidden="true">
+      <h2>Todo (DOM + state)</h2>
+      <todo-app></todo-app>
+    </section>
+
+    <section id="inspector" class="panel" aria-hidden="true">
+      <h2>DOM Inspector</h2>
+      <dom-inspector></dom-inspector>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-panel">
+      <button id="close-modal" class="close">✕</button>
+      <h3>Small Modal</h3>
+      <p>This demonstrates focus management and DOM insertion.</p>
+    </div>
+  </div>
+
+  <script type="module" src="script.js" defer></script>
+</body>
+</html>
